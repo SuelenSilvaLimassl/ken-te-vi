@@ -12,17 +12,15 @@ function pegarTweet(event) {
 
 tweetar.addEventListener('click', pegarTweet)
 
-function criarTweet(tweetTexto){
-    console.log("criarTweet")      
-
+function criarTweet(tweetTexto){   
     let data = new Date();
     let hora = data.getHours();
     let minutos = data.getMinutes();
 
     const tweet = {
-        nome: 'Daniel',
-        foto: './assets/img/ProfilePic.png',
-        usuario: '@danielkenzie',
+        nome: 'Suelen',
+        foto: './assets/img/minhafoto.jpg',
+        usuario: '@suelenlima',
         texto:tweetTexto,
         tempo: `${hora}:${minutos}`,
     }
@@ -46,7 +44,7 @@ function listarTemplateTweet(tweet){
     h2.innerText = nome
 
     let span = document.createElement('span');
-    span.innerText = `${usuario} - ${tempo}`
+    span.innerText = `${usuario} ${tempo}`
     
     let p = document.createElement('p');
     p.innerText = texto

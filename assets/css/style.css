@@ -13,7 +13,8 @@ body{
     flex-basis: 30%;
 }
 .cabecalho__logo{
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 32px;
 }
 .cabecalho__logo img{}
 .cabecalho__logo figcaption{
@@ -24,25 +25,31 @@ body{
 .cabecalho__menuLista{}
 .cabecalho__menuItem{
     margin-bottom: 25px;
+    display: flex;
+    align-items: center
 }
 .cabecalho__menuItem img{
     max-width: 26px;
+    margin-right: 12px;   
+}
+
+.cabecalho__perfil img{
+    border-radius: 50%;
 }
 .cabecalho__menuItem a{
     color: #000;
     text-decoration: none;
-    font-size: 22px;
-    vertical-align: top;
-
+    font-size: 16px;
 }
 
 .conteudoPrincipal{
     flex-basis: 70%;
     border-left: 1px solid #e7ecf0 ;
-    border-right: 1px solid, #e7ecf0 ;
+    border-right: 1px solid #e7ecf0 ;
 }
 .conteudoPrincipal__titulo{
     padding: 10px 30px;
+    font-weight: 600;
 }
 
 .conteudoPrincipal__formulario{
@@ -80,12 +87,17 @@ body{
     border-bottom: 1px solid #e7ecf0;
 }
 
-.tweet__fotoPerfil{}
+.tweet__fotoPerfil{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
 .tweet__conteudo{
     margin-left: 15px;
 }
 .tweet__conteudo h2{
     display: inline-block;
+    margin-right: 3px;
 }
 .tweet__conteudo span{
     display: inline-block;
